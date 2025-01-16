@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên Hệ - Quán Cà Phê</title>
+    <link rel="stylesheet" href="style2.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin: 10px 0 5px;
+      }
+      input,
+      textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        padding: 10px;
+        background: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: white">Quán Cà Phê</h1>
+    </header>
+    <div class="col-md-6 col-sm-12 col-xs-12 wrapbox-content-page-contact">
+      <div class="header-page-contact clearfix">
+        <h1>LIÊN HỆ</h1>
+      </div>
+      <div class="box-info-contact">
+        <ul class="list-info">
+          <li>
+            <p>Địa Chỉ của Chúng Tôi</p>
+            <p>
+              <strong
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Impedit necessitatibus <br />aspernatur, animi est quaerat
+                magnam commodi atque odit a vitae distinctio saepe fuga. Eum a
+                corrupti corporis asperiores assumenda deserunt.</strong
+              >
+            </p>
+          </li>
+          <li>
+            <p>HOTLINE</p>
+            <p><strong>Tư vấn &amp; Đặt hàng: +111111111</strong></p>
+          </li>
+          <li>
+            <p>E-mail Liên Hệ</p>
+            <p><strong>coffeeshop@coffeeconcept.vn</strong></p>
+          </li>
+          <li>
+            <p>Thời Gian Làm Việc</p>
+            <p>
+              <strong
+                >Thứ 2 - Thứ 6: 08:30 - 17:30 (nghỉ trưa 12:30 - 13:30)<br />Thứ
+                7: 08:30 - 12:30<br />Chủ nhật &amp; Ngày lễ: Nghỉ.</strong
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="box-send-contact">
+        <h2>Đăng Ký Thông Tin Nhận Tư Vấn</h2>
+        <div id="col-left contactFormWrapper">
+          <form
+            accept-charset="UTF-8"
+            action="/contact"
+            class="contact-form"
+            method="post"
+          >
+            <input name="form_type" type="hidden" value="contact" />
+            <input name="utf8" type="hidden" value="✓" />
+
+            <div class="contact-form">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                  <div class="input-group">
+                    <input
+                      required=""
+                      type="text"
+                      name="contact[name]"
+                      class="form-control"
+                      placeholder="Tên của Quý Khách"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-xs-12">
+                  <div class="input-group">
+                    <input
+                      pattern="[0-9]{10,12}"
+                      required=""
+                      type="text"
+                      name="contact[phone]"
+                      class="form-control"
+                      placeholder="Số Điện Thoại"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <div class="input-group">
+                    <input
+                      required=""
+                      type="text"
+                      name="contact[email]"
+                      class="form-control"
+                      placeholder="E-mail của Quý Khách"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <div class="input-group">
+                    <textarea
+                      required=""
+                      name="contact[body]"
+                      placeholder="Vui lòng để lại lời nhắn để được hỗ trợ nhanh hơn."
+                    ></textarea>
+                    <div class="sitebox-recaptcha">
+                      This site is protected by reCAPTCHA and the Google
+                      <a
+                        href="https://policies.google.com/privacy"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Privacy Policy</a
+                      >
+                      and
+                      <a
+                        href="https://policies.google.com/terms"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Terms of Service</a
+                      >
+                      apply.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <button class="button dark">Gửi Thông Tin</button>
+                </div>
+              </div>
+            </div>
+
+            <input
+              id="a0d0caeaf5154e6f846b690559e1e30e"
+              name="g-recaptcha-response"
+              type="hidden"
+              value="03AFcWeA4wItA5k01xS3caWsAO1QiEQzAECcoxpWB-Zvq2arw3b2wdLCWpJ0OFyOw0PiIIWTKd2RO0XtCDb7pCHFU9idWQFJB_Bvipealkkd0Ewx8WVcKX-4MP00hR4tyKFtkr0P2RYrJnwdWsjMG_mg_EAkGa1IQvgosx8eoI4jOEv7pr0UmSBygkNCDBG5_uL5CTLM806FBbrmlxsr8_KiMUDYGkjwAZjF5G-Hwx738R_psywnaa9bGIa6Ze3-lWWHya01oy0BEivOldt7v7Bo3okZcpvEtE9nzc9WdjjOPROIDfahcWjT23Pk-rMotRReCQ4eb-86sP31o0bRzIspuF3BXAjLU5qn_Oh0J5kiZFM2mP0_TXk4BMBz-jl5vyGdvzT1wrMfPLfktFqd8WhMAsLAJIzSEXpqHLtzUB922oI45mO9cdQbZ4eatIMSeEgFVa3gkeqYXeMMzarJT0zJrZOUJdej5vtnIwaT23xMVv3D9SnN9Ao06644tya1XQfUU9OVX-xFZ2VOUbBTPWxyYTV9KE3ypddi2f_CrIdnat2FbnJ6IQSa3dPQfy_8M0o7jk6eU2cWF763myrQQLIST9Bm6DxVP_eeE31OCt6KnHCwbsqg5oH6anIJv1gpGgQIqAd2XYelPfztha1qq2RgH-cH_u_1nkGgFhXxAaMh_6mS_CUjSCaLCh8gHUkttdzG6N3Z2e67srI5f8ecEjBC9VIBZsH707uMg7TL-pQAGIR-O41fq_X8YJ2aNnCnA2RrmcCAK9WO2y7EgD9WIysjHYRfMc6-KTwv95By1_98RJntxmWGMsgLNId-OJjawMr_9khZ210QreXl5fTOPeGqfSRuONP5ZBQZWU3VRmu45SpkzRp1JcxpmTDWztT85pS-f4WGl4r_eChNuAfZmrtIHWSuzx26QQrIeXLilt3IzVnUpD-qJWDE062IVVeGYBdHPXek9gJOaNS59wHV0dJW7sZuY3iuVVMnKBjUDgMhbO4ok8H5qFZpIYsgxFUQQhG1gRs4oUtf_hhIvw9TBFHP8mukqEMnSHHH-1QMY1AVsllxoKSVadsSGhEp3LUOvQSrJebBI4FojluMyR1snumsww7r_q5BzFnUNo7Z7DMY0GrpTaIRej9MGcBZ3baviqS7FqePyoiuZQYSXFRCIPBcrjuBiQoLafC2vLrMwbWpWmmWM-MDXN8IDU7e4VE5sDXYlpQX4EEn1dmBM2o2yv9nRh9SsQ75-vnaxMTciFqPCf3mHkfqR_O9e_kJ7oEI9oNqVvUqW4uYhfd6A7eZcbNEUWodaxOilNmjco8__JXq5exhbZWwCjhJgnGFa5_dEKDMsTu3QpJIVq4ejXcjrBt_zNe0y2SjiJjZP-BbCP7p_zEsB2rB_cb_FZZAvLLWlnFwtryH9HHu9FktcZqvS4Dl1ZmG7OYo_D4xmzTkh2T1xbMsZq743B2JHGvNHnSCF7e06jaYpVNLoiSD_eSJ786MXxcKK8kjw5a3zSlwunPYv9v00J7542uzcvk_swINK3fw66uxbv6ah9Ti2LG1RRE3TCMSPry_mO_DFDALMlPG4l4rdDHv_SpbcIFPiBBOUrfYoA-173OhJv2RB6MvvtzkpulW6a-B9iWKtqDsRJeEUM4kT2AG-p53oIrv-BL6LXoJGe5Cikh1LhCvzG0alsEgOYPdhJw4ZFu0B3noh_Ru8LyGN_Txomid-6r_vfvlmHAztbCaNa1KjRFAgRJA3yh0WD2sZwtO7q90UcCBfgm8PAL8O_5v6s8IMwxY6pLJVUdsEP1nstPYyQ53YOYQQZ892-Oo6U-0dEVQ9Yr27jwIlyeKZXw1kqfH0onXlZFGdcTWi-AGq5xZwF2dZuKE4JREoKUZ90pC-rzXfMZOEPAbr3gGx_1b67nVJtmBTN_Rxe0yO493qqq1WJVICw9AmmCJc64GqWNl93DHvufvNwvgWQddlOs3fFVe96WhO3leLHIP8zejS_RFU9"
+            />
+            <script src="https://www.google.com/recaptcha/api.js?render=6Le047YqAAAAAKk-dTuIhf_F7L0m3Yp9hOkIxTn1"></script>
+            <script>
+              grecaptcha.ready(function () {
+                grecaptcha
+                  .execute("6Le047YqAAAAAKk-dTuIhf_F7L0m3Yp9hOkIxTn1", {
+                    action: "submit",
+                  })
+                  .then(function (token) {
+                    document.getElementById(
+                      "a0d0caeaf5154e6f846b690559e1e30e"
+                    ).value = token;
+                  });
+              });
+            </script>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

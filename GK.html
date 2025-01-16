@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Coffee</title>
+    <!-- duong dan toi css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- duong dan toi js -->
+  </head>
+  <body>
+    <!-- nav -->
+    <header>
+      <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      
+      <ul class="navbar">
+        
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Giới Thiệu</a></li>
+        <li><a href="#products">Sản Phẩm</a></li>
+        <li><a href="#customers">Khách hàng</a></li>
+        <li><a href="lienhe.html">Liên hệ</a></li>
+
+      </ul>
+      <!-- icons -->
+      <div class="header-icon">
+       <i class="bx bx-cart-alt"></i>
+      <i class="bx bx-search" id="search-icon"></i>
+      <a href="sigup.html"> <i class='bx bx-child'></i></a>
+      </div>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search Here..." />
+      </div>
+    </header>
+    <!-- home -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>
+          Start your day <br />
+          with coffee
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          incidunt recusandae, quos voluptas, possimus dicta hic fugiat repellat
+          quas illum porro soluta deserunt odio ipsa totam iure minima libero
+          earum.
+        </p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+      <div class="home-img"><img src="img/main.png" alt="" /></div>
+    </section>
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="about-img"><img src="img/about.jpg" alt="" /></div>
+      <div class="about-text">
+        <h2>Our History</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum,
+          nostrum. Repellat, laboriosam nihil voluptate est culpa eum pariatur
+          deleniti sapiente.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          quibusdam vero explicabo, non amet rerum incidunt.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde
+          quas ipsam debitis voluptatem.
+        </p>
+        <a href="" class="btn">learn More</a>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <div class="heading"><h2>Out Popular Products</h2></div>
+      <div class="products-container">
+        <div class="box">
+         <a><img src="img/p1.png" alt="" /></a>
+          <h3>Americano Pure</h3>
+          <div class="content">
+            <span>$25</span>
+           <button onclick="addToCart('Sản phẩm 1', 25)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/p2.png" alt="" />
+          <h3>Americano Pure</h3>
+          <div class="content">
+              <span>$25</span>
+              <button onclick="addToCart('Sản phẩm 2', 25)">
+                Thêm vào giỏ hàng
+              </button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/p3.png" alt="" />
+          <h3>Americano Pure</h3>
+          <div class="content">
+              <span>$25</span>
+              <button onclick="addToCart('Sản phẩm 3', 25)">
+                Thêm vào giỏ hàng
+              </button>
+          </div class="content">
+        </div>
+        <div class="box">
+          <img src="img/p4.png" alt="" />
+          <h3>Americano Pure</h3>
+          <div class="content">
+              <span>$25</span>
+              <button onclick="addToCart('Sản phẩm 4', 25)">
+                Thêm vào giỏ hàng
+              </button>
+          </div class="content">
+        </div>
+        <div class="box">
+          <img src="img/p5.png" alt="" />
+          <h3>Americano Pure</h3>
+         <div class="content">
+              <span>$25</span>
+              <button class="Themvaogiohang" onclick="addToCart('Sản phẩm 5', 25)"> Thêm vào giỏ hàng 
+              </button>
+         </div class="content">
+        </div>
+        <div class="box">
+          <img src="img/p6.png" alt="" />
+          <h3>Americano Pure</h3>
+         <div class="content">
+              <span>$25</span>
+              <button class="Themvaogiohang" onclick="addToCart('Sản phẩm 6', 25)"> Thêm vào giỏ hàng 
+              </button>
+         </div>
+        </div>
+      </div>
+    </section>
+    <!-- customer -->
+     <section class="customers" id="customers">
+        <div class="heading">
+            <h2>Our customer's</h2>
+        </div>
+        <div class="customers-container">
+            <div class="box">
+            <div class="star"><i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum maxime alias fugit ipsa praesentium?</p>
+                <h2>Yasin Afarat</h2>
+                <img src="img/rev1.jpg" alt="">
+            </div>
+        </div>
+            <div class="box">
+            <div class="star"><i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum maxime alias fugit ipsa praesentium?</p>
+                <h2>Yasin Afarat</h2>
+                <img src="img/rev2.jpg" alt="">
+            </div>
+        </div>
+            <div class="box">
+            <div class="star"><i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum maxime alias fugit ipsa praesentium?</p>
+                <h2>Yasin Afarat</h2>
+                <img src="img/rev3.jpg" alt="">
+            </div>
+        </div>
+           
+        </div>
+        
+     </section>
+     <section class="footer">
+      <div class="footer-box">
+        <h3>Coffee Shop</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente hic similique aliquam eum.</p>
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Support</h3>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Terns Of Use</a></li>
+        <li><a href="#">Products</a></li>
+      </div>
+      <div class="footer-box">
+        <h3>View Guides</h3>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blogs Posts</a></li>
+        <li><a href="#">Our Branches</a></li>
+        <li><a href="#">Products</a></li>
+      </div>
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+          <span><i class="bx bxs-map"></i>Hà Nội, HCM</span>
+          <span><i class="bx bxs-phone"></i>+1 444444444</span>
+          <span><i class="bx bxs-envelope"></i>coffeeshop.com</span>
+        </div>
+      </div>
+     </section>
+     <div class="copyright">
+      <p>&#169; ABC All right reserved</p>
+     </div>
+    <script src="main.js"></script>
+  </body>
+</html>
